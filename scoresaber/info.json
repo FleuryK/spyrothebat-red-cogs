@@ -1,0 +1,10 @@
+{
+	"name": "ScoreSaber",
+	"author": ["Spyro The Bat"],
+	"description": "Fetch ScoreSaber profile data for a user by username for the game Beat Saber. Using API https://scoresaber.com/api/.",
+	"short": "Fetch ScoreSaber profile data for a user by username for the game Beat Saber.",
+	"requirements": [],
+	"tags": ["score", "saber", "api", "beat"],
+	"end_user_data_statement": "This cog stores no user data. This cog use API available at https://scoresaber.com/api/.",
+	"install_msg": "Thank you for installing my cog ScoreSaber.\nTyping `[p]scoresaber <username>` for retrieving information for username.\nInformation retrieving:\n - Username\n - International rank\n - National rank in country\n - Total score\n - Total score in ranked\n - Number of times played in ranked\n - Points of performance (PP)\n - Last played map\n - Creator of the map\n - Difficulty played of the map\n - Score of the map."
+}
