@@ -1,0 +1,7 @@
+{
+	"author": ["Spyro The Bat"],
+	"install_msg": "You have successfully installed this repo.\nFound a bug? Please open a issue on [GitHub](https://github.com/FleuryK/spyrothebat-red-cogs/issues).",
+	"name": "spyrothebat-red-cogs",
+	"short": "Cogs for games for this moment.",
+	"description": "This repository contains cogs for games for this moment."
+}
