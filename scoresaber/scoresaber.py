@@ -83,7 +83,7 @@ class ScoreSaber(commands.Cog):
 				last_map_score = "None"
 
 			# Create an embed message
-			embed = discord.Embed(title=f"ScoreSaber profile of {name}", color=discord.Color.pink())
+			embed = discord.Embed(title=f"ScoreSaber profile of {name}", color=discord.Color.from_str("#F93960"))
 			embed.set_thumbnail(url=profile_picture)
 
 			embed.add_field(name="International rank", value=f"#{rank_global}", inline=True)
