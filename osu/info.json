@@ -6,5 +6,5 @@
 	"requirements": [],
 	"tags": ["osu", "api", "beat"],
 	"end_user_data_statement": "This cog stores no user data. This cog use API available at https://osu.ppy.sh/api/v2/.",
-	"install_msg": "Thank you for installing my cog OSU.\nTyping `[p]set api osu <client_id> <client_secret>` before typing command `[p]osu <username>` for retrieving information for username.\nInformation retrieving:\n- Username\n- Last played map\n- Creator of the map\n- Number of played of the map\n- Rank of the map\n- Score of the map\n- Max combo of the map\n- Performance Points (PP) of the map\n- Performance Points (PP)\n- Global rank\n- Country rank\n- Accuracy\n- Total plays\n- Level"
+	"install_msg": "Thank you for installing my cog OSU.\nTyping `[p]set api osu client_id,<client_id> client_secret,<client_secret>` before typing command `[p]osu <username>` for retrieving information for username.\nInformation retrieving:\n- Username\n- Last played map\n- Creator of the map\n- Number of played of the map\n- Rank of the map\n- Score of the map\n- Max combo of the map\n- Performance Points (PP) of the map\n- Performance Points (PP)\n- Global rank\n- Country rank\n- Accuracy\n- Total plays\n- Level"
 }
