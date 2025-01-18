@@ -8,11 +8,14 @@ class Osu(commands.Cog):
 
 	async def get_osu_api_credentials(self):
 		tokens = await self.bot.get_shared_api_tokens("osu")
+
+		# Ensure the format is correct
 		client_id = tokens.get("client_id")
 		client_secret = tokens.get("client_secret")
 
 		if not client_id or not client_secret:
 			return None, None
+
 		return client_id, client_secret
 
 	async def get_osu_access_token(self, session):
@@ -36,16 +39,16 @@ class Osu(commands.Cog):
 
 	@commands.command()
 	async def osu(self, ctx, *, username: str):
-		"""Fetch osu! player stats for the given username using API v2."""
+		"""Fetch OSU! player stats for the given username using API v2 (https://osu.ppy.sh/api/v2/)."""
 		client_id, client_secret = await self.get_osu_api_credentials()
 		if not client_id or not client_secret:
-			await ctx.send("The osu! API credentials are not set correctly. Please configure them using `[p]set api osu <client_id> <client_secret>`.")
+			await ctx.send("The OSU! API credentials are not set. Please configure them using `[p]set api osu client_id,<client_id> client_secret,<client_secret>`.")
 			return
 
 		async with aiohttp.ClientSession() as session:
 			access_token = await self.get_osu_access_token(session)
 			if not access_token:
-				await ctx.send("Unable to retrieve osu! API access token. Please check your credentials.")
+				await ctx.send("Unable to retrieve OSU! API access token. Please check your credentials.")
 				return
 
 			headers = {
