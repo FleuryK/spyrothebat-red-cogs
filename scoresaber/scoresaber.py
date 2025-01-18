@@ -92,7 +92,7 @@ class ScoreSaber(commands.Cog):
 			embed.add_field(name="Total score in Ranked", value=f"{total_ranked_score:,}", inline=True)
 			embed.add_field(name="Number of times played", value=f"{total_plays}", inline=True)
 			embed.add_field(name="Number of times played in Ranked", value=f"{ranked_plays}", inline=True)
-			embed.add_field(name="Points of Performance (PP)", value=f"{performance_points}", inline=True)
+			embed.add_field(name="Performance Points (PP)", value=f"{performance_points}", inline=True)
 
 			if last_score:
 				embed.add_field(name="Last Played Map", value=last_map_name, inline=False)
